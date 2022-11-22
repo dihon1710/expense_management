@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "466609350545",
+    "project_id": "expense-management-dihon",
+    "storage_bucket": "expense-management-dihon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466609350545:android:731649ad99654294579c30",
+        "android_client_info": {
+          "package_name": "com.example.expense_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466609350545-0h00rvae0do3t7m1gaictqbkmjrbl5v6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4qXJccTpug0CN5-zfFg_iUpzH9uJRqNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466609350545-0h00rvae0do3t7m1gaictqbkmjrbl5v6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

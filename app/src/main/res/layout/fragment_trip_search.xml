@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.trip.TripSearchFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fmTripSearchTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Search"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fmTripSearchTripName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripSearchTitle" />
+
+        <EditText
+            android:id="@+id/fmTripSearchDestination"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="Destination"
+            android:inputType="textPersonName"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fmTripSearchTripName"
+            app:layout_constraintStart_toStartOf="@+id/fmTripSearchTripName"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripSearchTripName" />
+
+        <EditText
+            android:id="@+id/fmTripSearchDepartureDate"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="@string/label_departure_date"
+            android:inputType="date"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fmTripSearchDestination"
+            app:layout_constraintStart_toStartOf="@+id/fmTripSearchDestination"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripSearchDestination" />
+
+        <EditText
+            android:id="@+id/fmTripSearchDepartureTime"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="@string/label_departure_time"
+            android:inputType="date"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fmTripSearchDepartureDate"
+            app:layout_constraintStart_toStartOf="@+id/fmTripSearchDepartureDate"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripSearchDepartureDate" />
+
+        <EditText
+            android:id="@+id/fmTripSearchPurpose"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="@string/label_purpose"
+            android:inputType="text"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fmTripSearchDepartureTime"
+            app:layout_constraintStart_toStartOf="@+id/fmTripSearchDepartureTime"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripSearchDepartureTime" />
+
+        <Button
+            android:id="@+id/fmTripSearchButtonCancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/label_cancel"
+            app:layout_constraintStart_toStartOf="@+id/fmTripSearchPurpose"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripSearchPurpose" />
+
+        <Button
+            android:id="@+id/fmTripSearchButtonSearch"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:text="@string/label_search"
+            app:layout_constraintBottom_toBottomOf="@+id/fmTripSearchButtonCancel"
+            app:layout_constraintEnd_toEndOf="@+id/fmTripSearchPurpose"
+            app:layout_constraintStart_toEndOf="@+id/fmTripSearchButtonCancel"
+            app:layout_constraintTop_toTopOf="@+id/fmTripSearchButtonCancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
